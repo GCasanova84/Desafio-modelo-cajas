@@ -1,0 +1,136 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <style media="screen" type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .bloque {
+        width: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      .bandera {
+        width: 100%;
+        height: 66.67%;
+        border: 1px solid gray;
+      }
+      .esp__rojo {
+        width: 100%;
+        height: 26%;
+        background-color: red;
+      }
+      .esp__amarillo {
+        width: 100%;
+        height: 48%;
+        background-color: yellow;
+      }
+      .din__square {
+        width: 30%;
+        height: 45%;
+        background-color: red;
+      }
+      .din__rectangle {
+        width: 63.33%;
+        height: 45%;
+        background-color: red;
+      }
+      .din__container {
+        position: relative;
+      }
+      .top__left {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .top__right {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .bottom__left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .bottom_right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .ea__izq {
+        display: inline-block;
+        background-color: red;
+        width: 25%;
+        height:100%;
+      }
+      .ea__der {
+        display: inline-block;
+        width: 75%;
+        height:100%;
+      }
+      .ea__verde {
+        width: 100%;
+        height: 33.33%;
+        background-color: green;
+      }
+      .ea__blanco {
+        width: 100%;
+        height: 33.33%;
+        background-color: white;
+      }
+      .ea__negro {
+        width: 100%;
+        height: 33.33%;
+        background-color: black;
+      }
+      .japon__container {
+        position: relative;
+      }
+      .circle {
+        width: 30%;
+        height: 45%;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 27.5%;
+        left: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="españa" class="bloque">
+      <div class="bandera">
+        <div class="esp__rojo"></div>
+        <div class="esp__amarillo"></div>
+        <div class="esp__rojo"></div>
+      </div>
+      <h3>España</h3>
+    </section><section id="dinamarca" class="bloque">
+      <div class="bandera din__container">
+        <div class="din__square top__left"></div>
+        <div class="din__rectangle top__right"></div>
+        <div class="din__square bottom__left"></div>
+        <div class="din__rectangle bottom_right"></div>
+      </div>
+      <h3>Dinamarca</h3>
+    </section><section id="emiratos árabes" class="bloque">
+      <div class="bandera">
+        <div class="ea__izq"></div><div class="ea__der">
+          <div class="ea__verde"></div>
+          <div class="ea__blanco"></div>
+          <div class="ea__negro"></div>
+        </div>
+      </div>
+      <h3>Emiratos Árabes</h3>
+    </section><section id="japón" class="bloque">
+      <div class="bandera japon__container">
+        <div class="circle"></div>
+      </div>
+      <h3>Japón</h3>
+    </section>
+  </body>
+</html>
